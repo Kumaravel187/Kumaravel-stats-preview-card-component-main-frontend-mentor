@@ -1,0 +1,28 @@
+// Import google fonts
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+// Color variables obtained from style-guide
+
+$Very-dark-blue: hsl(233, 47%, 7%);
+$Dark-desaturated: hsl(244, 38%, 16%);
+$Soft-violet: hsl(277, 64%, 61%);
+
+$White: hsl(0, 0%, 100%);
+// main paragraph
+$Slightly-transparent-one: hsla(0, 0%, 100%, 0.75);
+// stat headings
+$Slightly-transparent-two: hsla(0, 0%, 100%, 0.6);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $Very-dark-blue;
+  font-size: 15px;
+  color: $White;
+  font-family: "Lexend Deca", sans-serif;
+}
