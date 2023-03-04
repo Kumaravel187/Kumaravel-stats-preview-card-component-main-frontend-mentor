@@ -69,14 +69,14 @@ body {
         font-family: "inter";
         color: $Slightly-transparent-two;
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 0.7rem;
         letter-spacing: 1.5px;
         span {
           margin-top: 10px;
           display: block;
           font-family: "Lexend Deca";
           color: $White;
-          font-size: 28px;
+          font-size: 1.3rem;
           letter-spacing: 0;
         }
       }
@@ -84,20 +84,40 @@ body {
   }
 }
 
-// @media screen and (min-width: 768px) {
-//   body {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-//     .container {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       .img,
-//       .info {
-//         width: 350px;
-//       }
-//     }
-//   }
-// }
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    height: calc(100% - 20px);
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+      .img,
+      .info {
+        width: 400px;
+      }
+      .img {
+        height: 100%;
+        background-size: cover;
+        background-image: url(../images/image-header-desktop.jpg);
+        background-position: top;
+      }
+      .info {
+        text-align: start;
+        padding: 50px 70px 50px 50px;
+        ul {
+          display: flex;
+          justify-content: space-between;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
